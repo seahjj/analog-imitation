@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></metaname>
+        <title>analog</title> 
+    </head>
+    <body>
+        <h1>Upload Your Photo for Digital Weathering</h1>
+    
+    <!-- Photo Upload Form -->
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" id="photo" name="photo" required>
+        <button type="submit">Upload Photo</button>
+    </form>
+
+    <!-- Slider to adjust weathering stages -->
+    <label for="weatheringStage">Adjust Weathering Stage:</label>
+    <input type="range" id="weatheringStage" min="0" max="100" value="0">
+
+    <!-- Display weathered photo -->
+    <img id="weatheredImage" src="" alt="Weathered Image">
+
+    <script src="app.js"></script>
+    </body>
+</html>
